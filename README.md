@@ -69,6 +69,8 @@ or
 
 ```npm i -D node-sass```
 
+## 18 Komponenty
+
 
 
 
