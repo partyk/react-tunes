@@ -71,6 +71,25 @@ or
 
 ## 18 Komponenty
 
+- Popopis TSX
+- Ukázka komponent
+
+## 19 REACT ROUTER
+
+https://reactrouter.com/en/main
+
+```npm i --save react-router-dom``` 
+
+```npm i -D @types/react-router-dom```
+
+**Browser Router**
+
+https://reactrouter.com/en/main/router-components/browser-router
+
+**Hash Router**
+
+https://reactrouter.com/en/main/router-components/hash-router
+
 
 
 
