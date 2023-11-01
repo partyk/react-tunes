@@ -44,3 +44,33 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# LESSONS
+
+## 17 CREATE-REACT-APP s TypeScript, iTunes appka
+
+### Vytvoření aplikace
+
+#### create react app
+
+https://create-react-app.dev
+
+### plus typescript
+
+https://create-react-app.dev/docs/adding-typescript
+
+```npx create-react-app my-app --template typescript```
+
+### Přidání podpory SASS
+
+```npm i -D sass```
+
+or
+
+```npm i -D node-sass```
+
+
+
+
+
+
