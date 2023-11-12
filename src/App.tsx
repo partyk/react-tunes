@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './assets/images/logo.svg';
 import './App.scss';
 import {Routes, Route} from "react-router-dom";
 // components
@@ -25,10 +24,6 @@ function App() {
                     <Route path="/about" Component={About} />
                 </Routes>
             </main>
-
-            <footer>
-                <img src={logo} className="App-logo" alt="logo"/>
-            </footer>
         </div>
     );
 }
