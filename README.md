@@ -90,6 +90,18 @@ https://reactrouter.com/en/main/router-components/browser-router
 
 https://reactrouter.com/en/main/router-components/hash-router
 
+## 20 Tvoje prvé (lol, lož) FUNCTION KOMPONENTY, podstránky
+
+### React.FC
+
+https://stackoverflow.com/questions/59988667/typescript-react-fcprops-confusion
+
+https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets
+
+https://echobind.com/post/react-with-typescript-components-as-function-declarations-vs-function-expressions
+
+
+
 
 
 

@@ -1,29 +1,26 @@
 import React from 'react';
 import logo from './assets/images/logo.svg';
 import './App.scss';
-import {Routes, Route, NavLink, Link} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
+// components
+import NavigationComponent from "./components/NavigationComponent";
+// views
+import HomeComponents from "./views/HomeComponents";
+import TunesComponent from "./views/TunesComponent";
+import AboutComponent from "./views/AboutComponent";
 
 function App() {
     return (
         <div className="App App-header">
             <header>
-                <nav>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/tunes">Tunes</NavLink>
-                    <NavLink to="/about">About</NavLink>
-                </nav>
+                <NavigationComponent />
             </header>
 
             <main className="content">
                 <Routes>
-                    <Route path="/" element={<h1>Homepage</h1>}/>
-                    <Route path="/tunes" element={(
-                        <>
-                            <h1>Tunes</h1>
-                            <p><Link to="/">Home</Link></p>
-                        </>
-                    )} />
-                    <Route path="/about" element={<h1>About</h1>} />
+                    <Route path="/" Component={HomeComponents} />
+                    <Route path="/tunes" element={<TunesComponent />} />
+                    <Route path="/about" Component={AboutComponent} />
                 </Routes>
             </main>
 
