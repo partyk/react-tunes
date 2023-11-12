@@ -3,24 +3,26 @@ import logo from './assets/images/logo.svg';
 import './App.scss';
 import {Routes, Route} from "react-router-dom";
 // components
-import NavigationComponent from "./components/NavigationComponent";
+import Navigation from "./components/Navigation";
+import TestInlineStyle from "./components/TestInlineStyle";
 // views
-import HomeComponents from "./views/HomeComponents";
-import TunesComponent from "./views/TunesComponent";
-import AboutComponent from "./views/AboutComponent";
+import Home from "./views/Home";
+import Tunes from "./views/Tunes";
+import About from "./views/About";
 
 function App() {
     return (
         <div className="App App-header">
             <header>
-                <NavigationComponent />
+                <Navigation />
             </header>
+            <TestInlineStyle />
 
             <main className="content">
                 <Routes>
-                    <Route path="/" Component={HomeComponents} />
-                    <Route path="/tunes" element={<TunesComponent />} />
-                    <Route path="/about" Component={AboutComponent} />
+                    <Route path="/" Component={Home} />
+                    <Route path="/tunes" element={<Tunes />} />
+                    <Route path="/about" Component={About} />
                 </Routes>
             </main>
 

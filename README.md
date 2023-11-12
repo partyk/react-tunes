@@ -47,6 +47,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # LESSONS
 
+@DOC https://create-react-app.dev/
+
 ## 17 CREATE-REACT-APP s TypeScript, iTunes appka
 
 ### Vytvoření aplikace
@@ -99,6 +101,36 @@ https://stackoverflow.com/questions/59988667/typescript-react-fcprops-confusion
 https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets
 
 https://echobind.com/post/react-with-typescript-components-as-function-declarations-vs-function-expressions
+
+## 21 INLINE styles, css-in-js, STYLED COMPONENTS, CSS MODULES
+
+https://legacy.reactjs.org/docs/faq-styling.html
+
+https://legacy.reactjs.org/docs/dom-elements.html#style
+
+https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
+
+https://reactrouter.com/en/main/components/nav-link
+
+CSS IN REACT
+
+https://styled-components.com/docs/basics#motivation
+
+https://medium.com/@pioul/modular-css-with-react-61638ae9ea3e
+
+https://blog.bitsrc.io/5-ways-to-style-react-components-in-2019-30f1ccc2b5b
+
+https://alligator.io/react/react-css
+
+
+REACT SASS + MODULES
+
+https://blog.bitsrc.io/how-to-use-sass-and-css-modules-with-create-react-app-83fa8b805e5e
+
+
+STYLED COMPONENTS
+
+https://www.iamtimsmith.com/blog/how-to-use-styles-in-a-react-js-application
 
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutComponent: React.FC = () => {
+const About: React.FC = () => {
     return (
         <div className="tunes">
             <h1>About</h1>
@@ -9,4 +9,4 @@ const AboutComponent: React.FC = () => {
     );
 };
 
-export default AboutComponent;
+export default About;

@@ -6,7 +6,7 @@ function Title(): React.ReactElement<HTMLTitleElement> {
     )
 }
 
-const TunesComponent: React.FC = () => {
+const Tunes: React.FC = () => {
     return (
         <div className="tunes">
             <Title />
@@ -15,4 +15,4 @@ const TunesComponent: React.FC = () => {
     );
 };
 
-export default TunesComponent;
+export default Tunes;
