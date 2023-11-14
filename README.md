@@ -96,6 +96,8 @@ https://reactrouter.com/en/main/router-components/hash-router
 
 ### React.FC
 
+https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components/
+
 https://stackoverflow.com/questions/59988667/typescript-react-fcprops-confusion
 
 https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets
