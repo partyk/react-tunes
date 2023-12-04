@@ -157,3 +157,12 @@ https://blog.bitsrc.io/making-api-calls-with-react-hooks-748ebfc7de8c
 ### TYPESCRIPT + HOOKS
 
 https://www.carlrippon.com/typed-usestate-with-typescript
+
+## 24 Tunes podstránka v TS s HOOKS a cyklom a formom
+
+### REACT FORMS (EVENT TYPES)
+
+https://www.carlrippon.com/building-super-simple-react-form-component-typescript-basics/
+https://www.carlrippon.com/building-a-react-form-component-with-typescript-validation/
+https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c 
+https://stackoverflow.com/questions/42081549/typescript-react-event-types

@@ -3,7 +3,6 @@ import './App.scss';
 import {Routes, Route} from "react-router-dom";
 // components
 import Navigation from "./components/Navigation";
-import TestInlineStyle from "./components/TestInlineStyle";
 // views
 import Home from "./views/Home";
 import Tunes from "./views/Tunes";
@@ -15,7 +14,6 @@ function App() {
             <header>
                 <Navigation />
             </header>
-            <TestInlineStyle />
 
             <main className="content">
                 <Routes>
