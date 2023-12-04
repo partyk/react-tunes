@@ -166,3 +166,6 @@ https://www.carlrippon.com/building-super-simple-react-form-component-typescript
 https://www.carlrippon.com/building-a-react-form-component-with-typescript-validation/
 https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchange-event-types-8c2baf03230c 
 https://stackoverflow.com/questions/42081549/typescript-react-event-types
+
+
+## 25 25 RODIČ a jeho DETI, sub-komponenty
