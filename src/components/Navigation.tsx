@@ -7,11 +7,22 @@ import {NavLink} from 'react-router-dom';
 import styles from './Navigation.module.scss';
 
 interface Props {
+    // brand: string
+    // brand?: string
+    // brand?: number
+    brand?: number | string;
+    howMany?: number
 };
 
-const Navigation: React.FC<Props> = () => {
+const Navigation: React.FC<Props> = (props) => {
+    // props jsou readonly
+    const {brand, howMany} = props;
     return (
         <nav className={styles.navigation}>
+            <span>
+                {/*this is a <strong>{props.brand || 'secondary'}</strong> navigation*/}
+                this is a <strong>{brand}, {howMany}</strong> navigation
+            </span>
             <NavLink
                 to="/"
                 className={({ isActive, isPending, isTransitioning }) =>

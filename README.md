@@ -185,3 +185,11 @@ https://react.tips/how-reactjs-components-communicate
 https://medium.com/better-programming/angular-vs-react-component-communication-91af1a144295
 
 https://passionfordev.com/react-communication-between-parent-and-child
+
+## 27 
+
+### THINKING IN REACT, STATE vs. PROPS
+
+https://reactjs.org/docs/thinking-in-react.html
+
+https://lucybain.com/blog/2016/react-state-vs-pros

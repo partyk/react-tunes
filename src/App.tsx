@@ -9,10 +9,20 @@ import Tunes from "./views/Tunes";
 import About from "./views/About";
 
 function App() {
+    const myProps = 'main';
     return (
         <div className="App App-header">
             <header>
-                <Navigation />
+                {/*<Navigation*/}
+                {/*    brand="main"*/}
+                {/*/>*/}
+                {/*<Navigation*/}
+                {/*    brand={30 * 2 + 10}*/}
+                {/*/>*/}
+                <Navigation
+                    brand={myProps}
+                    howMany={56}
+                />
             </header>
 
             <main className="content">
@@ -22,6 +32,12 @@ function App() {
                     <Route path="/about" Component={About} />
                 </Routes>
             </main>
+
+            <footer>
+                <Navigation
+                    brand="secondary"
+                />
+            </footer>
         </div>
     );
 }
