@@ -185,3 +185,40 @@ https://react.tips/how-reactjs-components-communicate
 https://medium.com/better-programming/angular-vs-react-component-communication-91af1a144295
 
 https://passionfordev.com/react-communication-between-parent-and-child
+
+## 28 komunikace pres callback
+
+v rodičovi pridáš metódu
+```
+const handleSearchFormSubmit = (data: string) => {
+
+}
+```
+
+
+cez PROP ju prepošleš decku
+
+```onSearchFormSubmit={handleSearchFormSubmit}```
+
+
+v decku príjmeš funkciu od rodiča
+
+```
+interface Props {
+onSearchFormSubmit: (data: string) => void
+}
+```
+
+a potom ju v dieťati môžeš zavolať
+
+```props.onSearchFormSubmit(query)```
+
+takto "poprosíš" rodiča, aby niečo spravil s dátami
+
+### Thinking in React
+
+https://reactjs.org/docs/thinking-in-react.html
+
+### Identify Where Your State Should Live
+
+https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live

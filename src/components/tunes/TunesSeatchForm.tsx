@@ -3,23 +3,17 @@ import React, {ChangeEvent, FormEvent, useState} from "react";
 // style
 import './TunesSearchForm.scss';
 
+interface Props {
+    onSearchFormSubmit: (data: string) => void
+}
 
 // component
-const TunesSearchForm: React.FC = () => {
+const TunesSearchForm: React.FC<Props> = (props) => {
     const [query, setQuery] = useState('');
-
-    /* const newSong = {
-        id: Math.max(...songs.map(s => s.id)) + 1,
-        artist: query,
-        name: query
-    }; */
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        /* setSongs([
-            ...songs,
-            newSong
-        ]); */
+        props.onSearchFormSubmit(query);
     }
 
     const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
