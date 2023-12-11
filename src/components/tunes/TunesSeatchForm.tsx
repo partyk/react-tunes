@@ -3,10 +3,6 @@ import React, {ChangeEvent, FormEvent, useState} from "react";
 // style
 import './TunesSearchForm.scss';
 
-// props
-interface Props {
-
-}
 
 // component
 const TunesSearchForm: React.FC = () => {

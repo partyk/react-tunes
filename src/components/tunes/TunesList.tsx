@@ -3,13 +3,9 @@ import React, {useState} from "react";
 // style
 import './TunesList.scss';
 
-// props
-interface Props {
-}
-
 // component
 const TunesList: React.FC = () => {
-    const [songs, setSongs] = useState([
+    const [songs] = useState([
         {
             id: 1,
             artist: 'Great Artist',

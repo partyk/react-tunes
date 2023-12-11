@@ -168,4 +168,20 @@ https://blaipratdesaba.com/react-typescript-cheatsheet-form-elements-and-onchang
 https://stackoverflow.com/questions/42081549/typescript-react-event-types
 
 
-## 25 25 RODIČ a jeho DETI, sub-komponenty
+## 25 RODIČ a jeho DETI, sub-komponenty
+
+## 26 KOMUNIKÁCIA komponentov
+
+https://reactjs.org/docs/components-and-props.HTML
+
+https://reactjs.org/docs/composition-vs-inheritance.html
+
+https://www.javascriptstuff.com/component-communication
+
+https://blog.bitsrc.io/react-communication-between-components-c0cfccfa996a
+
+https://react.tips/how-reactjs-components-communicate
+
+https://medium.com/better-programming/angular-vs-react-component-communication-91af1a144295
+
+https://passionfordev.com/react-communication-between-parent-and-child
