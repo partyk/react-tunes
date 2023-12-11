@@ -186,10 +186,22 @@ https://medium.com/better-programming/angular-vs-react-component-communication-9
 
 https://passionfordev.com/react-communication-between-parent-and-child
 
-## 27 
+## 27 komunikace props
 
 ### THINKING IN REACT, STATE vs. PROPS
 
 https://reactjs.org/docs/thinking-in-react.html
 
 https://lucybain.com/blog/2016/react-state-vs-pros
+
+```
+// props
+interface Props {
+    brand: String
+}
+   
+React.FC<Props> = (props) => {
+    // dobry napad je rozlozit objekt props na konstanty 
+    const { brand, howMany } = props
+}
+```
