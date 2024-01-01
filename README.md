@@ -224,3 +224,12 @@ https://reactjs.org/docs/thinking-in-react.html
 https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live
 
 ## 29 SINGLE SOURCE OF TRUTH, vytiahni stav do rodiča
+
+### THINKING IN REACT
+https://reactjs.org/docs/thinking-in-react.html
+
+### LIFTING STATE UP
+https://reactjs.org/docs/lifting-state-up.html
+
+### TOP-DOWN DATA FLOW
+https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down
