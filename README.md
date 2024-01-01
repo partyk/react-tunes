@@ -233,3 +233,8 @@ https://reactjs.org/docs/lifting-state-up.html
 
 ### TOP-DOWN DATA FLOW
 https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down
+
+## 30 REDUX, VUEX, NgRx STORE
+- https://redux.js.org
+- https://vuex.vuejs.org
+- https://ngrx.io/guide/store
