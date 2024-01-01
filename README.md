@@ -238,3 +238,31 @@ https://reactjs.org/docs/state-and-lifecycle.html#the-data-flows-down
 - https://redux.js.org
 - https://vuex.vuejs.org
 - https://ngrx.io/guide/store
+
+## 31 TS INTERFACE, vlastné dátové typy v TS + jeho história
+
+**V TypeScripte si môžeš doprogramovať vlastné dátové typy.**
+
+Ak máš objekty pre usera, môžeš objektu presne definovať jeho tvar.
+Že z čoho presne sa každý objekt usera musí skladať.
+Potom dostávaš presné rady, chyby, nápovedy.
+
+```
+export interface Song {
+    id: number
+    artist: string
+    name: string
+}
+  
+export interface User {
+    firstName: string
+    lastName: string
+    favoriteSong?: Song
+}
+```
+
+Môžeš si spraviť súbor týchto typov. Naimportovať všade, kde ich chceš používať. 
+
+```
+import { Song } from '../../types'
+```

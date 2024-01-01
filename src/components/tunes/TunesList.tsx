@@ -2,13 +2,10 @@ import React from "react";
 
 // style
 import './TunesList.scss';
+import {Song} from '../../types';
 
 interface Props {
-    songs: {
-        id: number,
-        artist: string,
-        name: string
-    }[],
+    songs: Song[],
 };
 
 // component
