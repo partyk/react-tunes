@@ -222,3 +222,5 @@ https://reactjs.org/docs/thinking-in-react.html
 ### Identify Where Your State Should Live
 
 https://reactjs.org/docs/thinking-in-react.html#step-4-identify-where-your-state-should-live
+
+## 29 SINGLE SOURCE OF TRUTH, vytiahni stav do rodiča

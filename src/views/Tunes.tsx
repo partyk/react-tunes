@@ -6,24 +6,52 @@ import TunesList from "../components/tunes/TunesList";
 
 // component
 const Tunes: React.FC = () => {
-    // template
-    // TOP DOWN DATA FLOW je komunikace mezi rodičem a potomkem
-    // props přes data atributy posílám do potomka data
-    // přes callback function posílám data zpět rodičovi
+    // single source of truht. Jediný zdroj pravdy. Data tečou jen od rodiče k dětem a rodič drží stav a potomci jen přijímají data.
+    // state
+    const [searchQuery, setSearchQuery] = useState('');
+    const [songs, setSongs] = useState([
+        {
+            id: 1,
+            artist: 'Great Artist',
+            name: 'Great Song'
+        },
+        {
+            id: 2,
+            artist: 'Samčo, brat ďažďovek',
+            name: 'Great Song'
+        },
+        {
+            id: 3,
+            artist: 'IMT Fron',
+            name: 'Preagektovaná'
+        }
+    ]);
 
-    const [title, setTitle] = useState('Tunes')
-
+    // callback
     const handleSearchFormSubmit = (data: string) => {
-        setTitle(data);
+        const newSong = {
+            id: Math.max(...songs.map(s => s.id)) + 1,
+            artist: data,
+            name: data,
+        };
+       setSongs([...songs, newSong]);
     };
+
+    const handleInputChange = (data: string) => {
+        setSearchQuery(data);
+    };
+
     return (
         <article className="tunes">
-            <h1>{title}</h1>
-            {/* callback function posilam do potomka */}
+            <h1>Tunes</h1>
             <TunesSearchForm
+                searchQuery={searchQuery}
                 onSearchFormSubmit={handleSearchFormSubmit}
+                onInputChange={handleInputChange}
             />
-            <TunesList />
+            <TunesList
+                songs={songs}
+            />
         </article>
     );
 };

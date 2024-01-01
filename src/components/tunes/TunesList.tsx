@@ -1,27 +1,19 @@
-import React, {useState} from "react";
+import React from "react";
 
 // style
 import './TunesList.scss';
 
+interface Props {
+    songs: {
+        id: number,
+        artist: string,
+        name: string
+    }[],
+};
+
 // component
-const TunesList: React.FC = () => {
-    const [songs] = useState([
-        {
-            id: 1,
-            artist: 'Great Artist',
-            name: 'Great Song'
-        },
-        {
-            id: 2,
-            artist: 'Samčo, brat ďažďovek',
-            name: 'Great Song'
-        },
-        {
-            id: 3,
-            artist: 'IMT Fron',
-            name: 'Preagektovaná'
-        }
-    ]);
+const TunesList: React.FC<Props> = (props) => {
+    const {songs} = props;
     // template
     return (
         <ul className="tunes-list">

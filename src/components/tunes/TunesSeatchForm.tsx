@@ -1,23 +1,24 @@
-import React, {ChangeEvent, FormEvent, useState} from "react";
+import React, {ChangeEvent, FormEvent} from "react";
 
 // style
 import './TunesSearchForm.scss';
 
 interface Props {
+    searchQuery: string,
     onSearchFormSubmit: (data: string) => void
+    onInputChange: (data: string) => void
 }
 
 // component
 const TunesSearchForm: React.FC<Props> = (props) => {
-    const [query, setQuery] = useState('');
-
+    const {searchQuery} = props;
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        props.onSearchFormSubmit(query);
+        props.onSearchFormSubmit(searchQuery);
     }
 
     const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
-        setQuery(e.target.value);
+        props.onInputChange(e.target.value);
     };
 
     // template
@@ -27,7 +28,7 @@ const TunesSearchForm: React.FC<Props> = (props) => {
         >
             <input
                 type="text"
-                value={query}
+                value={searchQuery}
                 onChange={handleInput}
                 className="search"
             />
