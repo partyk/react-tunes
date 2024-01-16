@@ -1,9 +1,13 @@
 import React, {useRef, ChangeEvent, FormEvent} from "react";
+// pridam debounce z
+import {debounce} from "lodash-es";
 
 // style
 import './TunesSearchForm.scss';
 
-interface Props {}
+interface Props {
+    onSearch: (query: string) => void
+}
 
 // component
 const TunesSearchForm: React.FC<Props> = (props) => {
@@ -18,9 +22,9 @@ const TunesSearchForm: React.FC<Props> = (props) => {
     }
 
     // handleInput
-    const handleInput = (e: ChangeEvent<HTMLInputElement>) => {
+    const handleInput = debounce((e: ChangeEvent<HTMLInputElement>) => {
         searchForMusic();
-    };
+    }, 500);
 
     // seaarch for music
     const searchForMusic = () => {
@@ -29,7 +33,11 @@ const TunesSearchForm: React.FC<Props> = (props) => {
             console.log(searchInput.current.value);
         } */
         // OPTIONAL CHAINING ?.
-        console.log(searchInput.current?.value);
+        // console.log(searchInput.current?.value);
+        let searchString = searchInput.current?.value;
+        if (searchString) {
+            props.onSearch(searchString);
+        }
     };
 
     // template

@@ -269,6 +269,8 @@ import { Song } from '../../types'
 
 ## 32 useRef odkaz na DOM elementy, OPTIONAL CHAINING, refaktoring
 
+ve function components nemohu volat methody setState, componentDidMount a ani React.createRef, ale musíš pouýít hook useRef
+
 ### REFs IN FUNCTION COMPONENTS (& TYPESCRIPT)
 
 - https://reactjs.org/docs/hooks-reference.html#useref
@@ -285,3 +287,32 @@ import { Song } from '../../types'
 ### ON CHANGE / ON INPUT
 - https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element
 - https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput
+
+
+## 33 LODASH, @types, iTunes api, AXIOS
+
+debounce
+
+```
+yarn add lodash-es
+yarn add --dev @types/lodash-es
+```
+
+### Lodash DOKUMENTACIA, debounce
+- https://lodash.com/docs
+- https://lodash.com/docs#debounce
+
+
+### REACT ON/HANDLE NAMING CONVENTION
+- https://medium.com/javascript-in-plain-english/handy-naming-conventions-for-event-handler-functions-props-in-react-fc1cbb791364
+- https://jaketrent.com/post/naming-event-handlers-react/
+
+
+
+### (free) apis
+- https://reqres.in
+- https://github.com/toddmotto/public-apis
+- https://any-api.com
+- https://www.reddit.com/r/webdev/comments/3wrswc/what_are_some_fun_apis_to_play_with
+- https://www.reddit.com/r/RedLetterMedia.json
+- https://dev.to/aumayeung/free-and-fake-apis-you-can-use-to-practice-front-end-development-4eck
