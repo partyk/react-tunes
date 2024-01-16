@@ -266,3 +266,22 @@ Môžeš si spraviť súbor týchto typov. Naimportovať všade, kde ich chceš 
 ```
 import { Song } from '../../types'
 ```
+
+## 32 useRef odkaz na DOM elementy, OPTIONAL CHAINING, refaktoring
+
+### REFs IN FUNCTION COMPONENTS (& TYPESCRIPT)
+
+- https://reactjs.org/docs/hooks-reference.html#useref
+- https://reactjs.org/docs/refs-and-the-dom.html#refs-and-function-components
+- https://blog.logrocket.com/how-to-use-react-createref-ea014ad09dba/
+- https://linguinecode.com/post/how-to-use-react-useref-with-typescript
+
+### When to use React useRef and useLayoutEffect vs useEffect
+-  https://linguinecode.com/post/when-to-use-useref-and-uselayouteffect
+
+### OPTIONAL CHAINING
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+
+### ON CHANGE / ON INPUT
+- https://stackoverflow.com/questions/17047497/difference-between-change-and-input-event-for-an-input-element
+- https://stackoverflow.com/questions/38256332/in-react-whats-the-difference-between-onchange-and-oninput
