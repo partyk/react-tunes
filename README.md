@@ -316,3 +316,25 @@ yarn add --dev @types/lodash-es
 - https://www.reddit.com/r/webdev/comments/3wrswc/what_are_some_fun_apis_to_play_with
 - https://www.reddit.com/r/RedLetterMedia.json
 - https://dev.to/aumayeung/free-and-fake-apis-you-can-use-to-practice-front-end-development-4eck
+
+
+## 34 Extract data, Samotvorba Interfacu, OBJECT DESTRUCTURING, typ Song
+
+### Paste JSON as Code
+- https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype
+- https://blog.quicktype.io/quicktype-extensions
+
+
+```
+const extractData({ trackName: title }) {
+    return { title }
+}
+```
+
+### object destructuring
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+
+
+### types in object destructuring?
+- https://stackoverflow.com/questions/39672807/types-in-object-destructuring (aj keď vždy byť skeptický k stackoverflow)
