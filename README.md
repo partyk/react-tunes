@@ -340,4 +340,20 @@ const extractData({ trackName: title }) {
 - https://stackoverflow.com/questions/39672807/types-in-object-destructuring (aj keď vždy byť skeptický k stackoverflow)
 
 
-### 35 FORMÁTOVANIE výpisov, <TunesSong> komponent
+## 35 FORMÁTOVANIE výpisov, <TunesSong> komponent
+
+## 36 useEffect a useMemo hooks
+
+### USE MEMO
+- https://reactjs.org/docs/hooks-reference.html#usememo
+- https://stackoverflow.com/a/54670367
+
+
+### USE EFFECT
+- https://overreacted.io/a-complete-guide-to-useeffect/
+- https://reactjs.org/docs/hooks-reference.html#useeffect
+
+
+### FETCH DATA WITH REACT HOOKS
+- https://www.robinwieruch.de/react-hooks-fetch-data
+
