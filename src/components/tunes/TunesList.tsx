@@ -1,8 +1,8 @@
 import React from "react";
 
-// style
 import './TunesList.scss';
 import {Song} from '../../types';
+import TunesSong from "./TunesSong";
 
 interface Props {
     songs: Song[],
@@ -17,7 +17,11 @@ const TunesList: React.FC<Props> = (props) => {
             {songs.map(song => (
                 <li
                     key={song.id}
-                >{song.artist}</li>
+                >
+                    <TunesSong
+                        song={song}
+                    />
+                </li>
             ))}
         </ul>
     );
