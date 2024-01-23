@@ -357,3 +357,9 @@ const extractData({ trackName: title }) {
 ### FETCH DATA WITH REACT HOOKS
 - https://www.robinwieruch.de/react-hooks-fetch-data
 
+## 37 KONIEC reactu, ANIMÁCIE, Vue vs React rekap
+
+```
+    npm i --save react-transition-group
+    npm i --save @types/react-transition-group
+```

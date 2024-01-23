@@ -2,6 +2,9 @@ import React from "react";
 
 import './TunesList.scss';
 import {Song} from '../../types';
+import { TransitionGroup, CSSTransition} from "react-transition-group";
+
+// styles
 import TunesSong from "./TunesSong";
 
 interface Props {
@@ -13,17 +16,24 @@ const TunesList: React.FC<Props> = (props) => {
     const {songs} = props;
     // template
     return (
-        <ul className="tunes-list">
+        // obalim vypis a nastavim ze je typu UL
+        <TransitionGroup component="ul" className="tunes-list">
             {songs.map(song => (
                 <li
                     key={song.id}
                 >
-                    <TunesSong
-                        song={song}
-                    />
+                    // Obalim komponentu TuneSong a nastavim
+                    // key identifikátor
+                    // timeout délka animace
+                    // classNames prefix pro tridy animace
+                    <CSSTransition key={song.id} timeout={200} classNames="song">
+                        <TunesSong
+                            song={song}
+                        />
+                    </CSSTransition>
                 </li>
             ))}
-        </ul>
+        </TransitionGroup>
     );
 };
 
